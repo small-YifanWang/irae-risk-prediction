@@ -15,38 +15,40 @@
         <p class="instructions">Please enter the following information</p>
         <div class="input-grid">
             <div class="grid-item">
-                <label>CD8+T (%):</label>
+                <label for="cd8">CD8+T (%):</label>
                 <input type="number" id="cd8" min="0" max="100">
             </div>
             <div class="grid-item">
-                <label>CD4+T (%):</label>
+                <label for="cd4">CD4+T (%):</label>
                 <input type="number" id="cd4" min="0" max="100">
             </div>
             <div class="grid-item">
-                <label>Tph (%):</label>
+                <label for="tph">Tph (%):</label>
                 <input type="number" id="tph" min="0" max="100">
             </div>
             <div class="grid-item">
-                <label>Tfh (%):</label>
+                <label for="tfh">Tfh (%):</label>
                 <input type="number" id="tfh" min="0" max="100">
             </div>
             <div class="grid-item">
-                <label>Th1 (%):</label>
+                <label for="th1">Th1 (%):</label>
                 <input type="number" id="th1" min="0" max="100">
             </div>
             <div class="grid-item">
-                <label>Th2 (%):</label>
+                <label for="th2">Th2 (%):</label>
                 <input type="number" id="th2" min="0" max="100">
             </div>
         </div>
-        <button onclick="calculateRisk()">Calculate</button>
+        <div class="button-container">
+            <button onclick="calculateRisk()">Calculate</button>
+        </div>
         <div class="results">
             <div class="grid-item">
-                <label>Probability of irAEs:</label>
+                <label for="result1">Probability of irAEs:</label>
                 <input type="text" id="result1" readonly>
             </div>
             <div class="grid-item">
-                <label>Probability of 2-4 grade irAEs:</label>
+                <label for="result2">Probability of 2-4 grade irAEs:</label>
                 <input type="text" id="result2" readonly>
             </div>
         </div>

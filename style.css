@@ -12,7 +12,7 @@ body {
 .container {
     border: 2px solid black;
     padding: 20px;
-    width: 600px;
+    width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,11 +41,16 @@ body {
     margin-bottom: 20px;
 }
 
-.input-grid label {
-    align-self: center;
+.grid-item {
+    display: flex;
+    flex-direction: column;
 }
 
-.input-grid input {
+.grid-item label {
+    margin-bottom: 5px;
+}
+
+.grid-item input {
     padding: 5px;
     font-size: 1em;
 }
@@ -68,8 +73,13 @@ button {
     gap: 10px;
 }
 
+.results .grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .results label {
-    align-self: center;
+    margin-bottom: 5px;
 }
 
 .results input {

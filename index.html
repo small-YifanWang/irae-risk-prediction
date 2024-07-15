@@ -14,25 +14,41 @@
         <hr class="blue-line">
         <p class="instructions">Please enter the following information</p>
         <div class="input-grid">
-            <label>CD8+T (%):</label>
-            <input type="number" id="cd8" min="0" max="100">
-            <label>CD4+T (%):</label>
-            <input type="number" id="cd4" min="0" max="100">
-            <label>Tph (%):</label>
-            <input type="number" id="tph" min="0" max="100">
-            <label>Tfh (%):</label>
-            <input type="number" id="tfh" min="0" max="100">
-            <label>Th1 (%):</label>
-            <input type="number" id="th1" min="0" max="100">
-            <label>Th2 (%):</label>
-            <input type="number" id="th2" min="0" max="100">
+            <div class="grid-item">
+                <label>CD8+T (%):</label>
+                <input type="number" id="cd8" min="0" max="100">
+            </div>
+            <div class="grid-item">
+                <label>CD4+T (%):</label>
+                <input type="number" id="cd4" min="0" max="100">
+            </div>
+            <div class="grid-item">
+                <label>Tph (%):</label>
+                <input type="number" id="tph" min="0" max="100">
+            </div>
+            <div class="grid-item">
+                <label>Tfh (%):</label>
+                <input type="number" id="tfh" min="0" max="100">
+            </div>
+            <div class="grid-item">
+                <label>Th1 (%):</label>
+                <input type="number" id="th1" min="0" max="100">
+            </div>
+            <div class="grid-item">
+                <label>Th2 (%):</label>
+                <input type="number" id="th2" min="0" max="100">
+            </div>
         </div>
         <button onclick="calculateRisk()">Calculate</button>
         <div class="results">
-            <label>Probability of irAEs:</label>
-            <input type="text" id="result1" readonly>
-            <label>Probability of 2-4 grade irAEs:</label>
-            <input type="text" id="result2" readonly>
+            <div class="grid-item">
+                <label>Probability of irAEs:</label>
+                <input type="text" id="result1" readonly>
+            </div>
+            <div class="grid-item">
+                <label>Probability of 2-4 grade irAEs:</label>
+                <input type="text" id="result2" readonly>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

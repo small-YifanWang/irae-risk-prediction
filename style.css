@@ -12,7 +12,7 @@ body {
 .container {
     border: 2px solid black;
     padding: 20px;
-    width: 800px;
+    width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
@@ -52,6 +52,7 @@ body {
 
 .grid-item label {
     margin-bottom: 5px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -81,13 +82,14 @@ button {
 
 .results {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr; */
     gap: 20px;
 }
 
 .results .grid-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-self: end;
 }
 
 .results label {

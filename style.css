@@ -37,7 +37,7 @@ body {
 .input-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px 40px;
     margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@ button {
 .results {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 20px 40px;
 }
 
 .results .grid-item {

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+}
+
+.highlight {
+    color: #00B0F0;
+}
+
+.blue-line {
+    border: 1px solid #00B0F0;
+    background-color: #00B0F0;
+}
+
+.instructions {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-grid label {
+    align-self: center;
+}
+
+.input-grid input {
+    padding: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.results label {
+    align-self: center;
+}
+
+.results input {
+    padding: 5px;
+    font-size: 1em;
+}

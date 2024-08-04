@@ -14,7 +14,7 @@ function calculateRisk() {
     const irAE = -1.948+-0.016*age+0.606*tph+2.663*tfh+-4.778*th1/th2;
     const irAE_2_4 = -4.029+0.032*age+-0.096*tph+1.718*tfh+-1.815*th1/th2;
 
-    const sigmoid = x => 1 - 1 / (1 + Math.exp(-x));
+    const sigmoid = x => 1 - 1 / (1 + Math.exp(x));
 
     const result1 = (sigmoid(irAE) * 100).toFixed(3);
     const result2 = (sigmoid(irAE_2_4) * 100).toFixed(3);

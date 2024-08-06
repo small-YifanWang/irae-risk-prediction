@@ -11,13 +11,13 @@ function calculateRisk() {
         return;
     }
 
-    const irAE = -1.948+-0.016*age+0.606*tph+2.663*tfh+-4.778*th1/th2;
-    const irAE_2_4 = -4.029+0.032*age+-0.096*tph+1.718*tfh+-1.815*th1/th2;
+    const irAE = -1.953-0.016*age+0.606*tph+2.668*tfh-4.789*th1/th2;
+    const irAE_2_4 = -3.683+0.001*age+0.604*tph+1.404*tfh-2.573*th1/th2;
 
-    const sigmoid = x => 1 - 1 / (1 + Math.exp(x));
+    const func = x => 1 - 1 / (1 + Math.exp(x));
 
-    const result1 = (sigmoid(irAE) * 100).toFixed(3);
-    const result2 = (sigmoid(irAE_2_4) * 100).toFixed(3);
+    const result1 = (func(irAE) * 100).toFixed(3);
+    const result2 = (func(irAE_2_4) * 100).toFixed(3);
 
     document.getElementById('result1').value = result1 + '%';
     document.getElementById('result2').value = result2 + '%';
